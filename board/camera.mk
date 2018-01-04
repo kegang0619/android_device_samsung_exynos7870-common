@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-# Graphics
-USE_OPENGL_RENDERER := true
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-
-# Gralloc
-TARGET_USES_GRALLOC1_ADAPTER := true
-
-# ION
-TARGET_USES_ION := true
+# Samsung Camera
+BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
+TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_ext

@@ -23,4 +23,7 @@ cc_library_static {
 		"include",
 		"include/camera"
 	],
+	include_dirs: [
+		"device/samsung/exynos7870-common/include"
+	],
 }

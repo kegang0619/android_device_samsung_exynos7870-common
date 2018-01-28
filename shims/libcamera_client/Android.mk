@@ -1,3 +1,4 @@
+#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,9 +12,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Shim
-TARGET_LD_SHIM_LIBS += \
-    /system/lib/libcamera_client.so|libcamera_client_shim.so \
-    /system/lib/libstagefright.so|/vendor/lib/libstagefright_shim.so
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := CameraParameters.cpp
+
+LOCAL_MODULE := libcamera_client_shim
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+
+include $(BUILD_SHARED_LIBRARY)

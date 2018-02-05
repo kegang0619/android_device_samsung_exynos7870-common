@@ -15,8 +15,5 @@
 #
 
 # Samsung Hardware
-ifeq ($(PRODUCT_DEVICE),j7y17lte)
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
-else
+#BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 BOARD_HARDWARE_CLASS := device/samsung/exynos7870-common/cmhw
-endif

@@ -225,6 +225,9 @@
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
+     <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+    
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 

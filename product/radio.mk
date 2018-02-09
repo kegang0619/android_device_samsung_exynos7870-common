@@ -16,13 +16,16 @@
 
 # Radio
 PRODUCT_PACKAGES += \
-    libxml2 \
-    libprotobuf-cpp-full \
-    libsecril-client \
-    libsecril-client-sap \
-    modemloader\
-    android.hardware.radio@1.0 \
-    android.hardware.radio.deprecated@1.0
+	libxml2 \
+	libprotobuf-cpp-full \
+	rild \
+	libreference-ril \
+	libril \
+	libsecril-client \
+	libsecril-client-sap \
+	android.hardware.radio@1.0 \
+	android.hardware.radio.deprecated@1.0 \
+	modemloader
 
 # IPv6
 PRODUCT_PACKAGES += \

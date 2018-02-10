@@ -27,3 +27,7 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes \
     libebtc
+
+#rild
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ramdisk/rild.rc:system/etc/init/rild.rc

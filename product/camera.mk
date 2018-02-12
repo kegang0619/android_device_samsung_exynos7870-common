@@ -16,6 +16,7 @@
 
 #Camera
  PRODUCT_PACKAGES += \
+    Snap \
     libcamhelpr \
     camera.device@3.2-impl \
     camera.device@1.0-impl \

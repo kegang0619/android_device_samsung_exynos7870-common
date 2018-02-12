@@ -15,4 +15,4 @@
 #
 
 # Samsung Hardware
-BOARD_HARDWARE_CLASS := device/samsung/exynos7870-common/lineagehw
+BOARD_HARDWARE_CLASS := hardware/samsung/lineagehw

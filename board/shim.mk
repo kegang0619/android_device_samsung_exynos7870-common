@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +13,6 @@
 # limitations under the License.
 #
 
-#Camera
- PRODUCT_PACKAGES += \
-    Snap \
-    camera.universal7870 \
-    libcamhelpr \
-    libstagefright_shim \
-    camera.device@3.2-impl \
-    camera.device@1.0-impl \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service
+# Shim
+TARGET_LD_SHIM_LIBS += \
+	/system/lib/libstagefright.so|/system/lib/libstagefright_shim.so

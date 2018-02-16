@@ -1,3 +1,4 @@
+#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,10 +12,23 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-# Shim
-TARGET_LD_SHIM_LIBS += \
-    /system/lib/libbauthserver.so|/system/lib/libbauthtzcommon_shim.so \
-    /system/lib/libexynoscamera.so|/system/vendor/lib/libcamhelpr.so \
-    /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := CameraSource.cpp
+
+LOCAL_C_INCLUDES := \
+    $(TOP)/frameworks/av/include \
+    $(TOP)/frameworks/native/include/media/hardware \
+    $(TOP)/frameworks/native/include/media/openmax
+
+LOCAL_SHARED_LIBRARIES := \
+    libcamera_client \
+    liblog
+
+LOCAL_MODULE := libstagefright_shim
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+
+include $(BUILD_SHARED_LIBRARY)

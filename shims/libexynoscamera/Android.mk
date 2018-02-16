@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +12,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-#Camera
- PRODUCT_PACKAGES += \
-    Snap \
-    camera.universal7870 \
-    libexynoscamera_shim \
-    libstagefright_shim \
-    libcamera_client_shim \
-    camera.device@3.2-impl \
-    camera.device@1.0-impl \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := GraphicBuffer.cpp
+
+LOCAL_C_INCLUDES := frameworks/native/include
+
+LOCAL_SHARED_LIBRARIES := libgui libui
+
+LOCAL_MODULE := libexynoscamera_shim
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+
+include $(BUILD_SHARED_LIBRARY)

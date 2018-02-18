@@ -27,11 +27,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libion \
-    libfimg \
-    libstagefright_shim \
-    libui_shim \
-    libExynosOMX_shim
+    libfimg
 
-# Overriden service definition
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/init/android.hardware.media.omx@1.0-service.rc:system/vendor/etc/init/android.hardware.media.omx@1.0-service.rc
+PRODUCT_PACKAGES += \
+    libstagefright_shim \
+    libui_shim

@@ -15,7 +15,7 @@
 #
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_CONFIG := xlarge
 
 # Graphics
 PRODUCT_PACKAGES += \

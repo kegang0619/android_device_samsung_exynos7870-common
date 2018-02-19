@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +13,9 @@
 # limitations under the License.
 #
 
-# ADB
-PRODUCT_PROPERTY_OVERRIDES += \
-       ro.secure=0 \
-       ro.adb.secure=0 \
-       ro.hardware=universal7870 \
-       persist.service.adb.enable=1 \
-       persist.service.debuggable=1 \
-       persist.sys.usb.config=adb
+#ADB
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1 \
+    persist.service.adb.enable=1

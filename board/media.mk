@@ -16,23 +16,23 @@
 #
 
 
-zero_shims_omx :=  \
-    /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|/system/lib/libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|/system/lib/libui_shim.so
+zero_shims_omx := \
+    /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|/system/lib/SHIM_TARGET.so \
+    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|/system/lib/SHIM_TARGET.so
 
 # Shims: libstagefright
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libexynoscamera.so|/system/lib/libstagefright_shim.so \
     /system/lib/libexynoscamera3.so|/system/lib/libstagefright_shim.so \
-    $(zero_shims_omx)
+    $(subst SHIM_TARGET,libstagefright_shim,$(zero_shims_omx))
 
 # Shims: libui
-TARGET_LD_SHIM_LIBS += $(zero_shims_omx)
+TARGET_LD_SHIM_LIBS += $(subst SHIM_TARGET,libui_shim,$(zero_shims_omx))

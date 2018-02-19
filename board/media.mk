@@ -31,7 +31,7 @@ zero_shims_omx :=  \
 # Shims: libstagefright
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libexynoscamera.so|/system/lib/libstagefright_shim.so \
-    /system/lib/libexynoscamera3.so|/system/lib/libstagefright_shim.so
+    /system/lib/libexynoscamera3.so|/system/lib/libstagefright_shim.so \
     $(zero_shims_omx)
 
 # Shims: libui

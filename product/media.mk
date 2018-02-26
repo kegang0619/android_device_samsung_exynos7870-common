@@ -28,7 +28,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libion \
     libfimg
-
-PRODUCT_PACKAGES += \
-    libstagefright_shim \
-    libui_shim

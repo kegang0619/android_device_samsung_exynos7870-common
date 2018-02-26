@@ -22,5 +22,8 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 # SELinux
 BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
 
-# inherit the splitted configs
+# Properties
+TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+
+# Inherit splitted common board configs
 -include $(LOCAL_PATH)/board/*.mk

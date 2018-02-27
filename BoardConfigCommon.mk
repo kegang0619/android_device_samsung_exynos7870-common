@@ -26,7 +26,8 @@ DEVICE_MANIFEST_FILE := device/samsung/exynos7870-common/manifest.xml
 BOARD_SEPOLICY_DIRS := device/samsung/exynos7870-common/sepolicy
 
 # Properties
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
 # Inherit splitted common board configs
 -include $(LOCAL_PATH)/board/*.mk

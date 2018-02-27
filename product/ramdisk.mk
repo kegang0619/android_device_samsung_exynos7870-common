@@ -25,8 +25,8 @@ PRODUCT_PACKAGES += \
 
 # cpboot-daemon
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/cbd:system/bin/cbd
+    $(LOCAL_PATH)/ramdisk/cbd:vendor/bin/cbd
 
 # sswap
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/sswap:system/bin/sswap
+    $(LOCAL_PATH)/ramdisk/sswap:vendor/bin/sswap

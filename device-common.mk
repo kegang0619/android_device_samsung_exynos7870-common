@@ -22,6 +22,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Inherit splitted common product configs
 -include $(LOCAL_PATH)/product/*.mk
 
+# VNDK HALs
+PRODUCT_PACKAGES += \
+    vndk-sp
+
 # Call Samsung LSI Board Support Package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi-cm/exynos7870/exynos7870.mk)

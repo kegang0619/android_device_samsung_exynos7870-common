@@ -808,7 +808,7 @@ on property:ro.debuggable=1
     write /sys/module/kgdboc/parameters/kgdboc ttyFIQ1
     write /sys/module/fiq_debugger/parameters/kgdb_enable 1
 
-service prepare_param /system/bin/prepare_param.sh /dev/block/platform/13540000.dwmmc0/by-name/PARAM
+service prepare_param/vendor/bin/prepare_param.sh /dev/block/platform/13540000.dwmmc0/by-name/PARAM
     class core
     user root
     group root
@@ -816,7 +816,7 @@ service prepare_param /system/bin/prepare_param.sh /dev/block/platform/13540000.
     oneshot
 
 # GPS
-service gpsd /system/bin/gpsd
+service gpsd/vendor/bin/gpsd
     class main
     user gps
     group system inet wakelock

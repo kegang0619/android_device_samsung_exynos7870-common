@@ -67,8 +67,8 @@
 /sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/lux        u:object_r:sysfs_mdnie_writable:s0
 /sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/sensorRGB  u:object_r:sysfs_mdnie_writable:s0
 
-/system/bin/mcDriverDaemon   u:object_r:tee_exec:s0
-/system/bin/modemloader      u:object_r:modemloader_exec:s0
-/system/bin/wifiloader       u:object_r:wifiloader_exec:s0
+/vendor/bin/mcDriverDaemon   u:object_r:tee_exec:s0
+/vendor/bin/modemloader      u:object_r:modemloader_exec:s0
+/vendor/bin/wifiloader       u:object_r:wifiloader_exec:s0
 /vendor/bin/cbd              u:object_r:cpboot-daemon_exec:s0
-/system/bin/gpsd             u:object_r:gpsd_exec:s0
+/vendor/bin/gpsd             u:object_r:gpsd_exec:s0

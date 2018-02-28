@@ -22,7 +22,7 @@
 #include <stdlib.h>
 #include <system/graphics.h>
 
-#include <camera/CameraParameters.h>
+#include "CameraParameters.h"
 
 namespace android {
 // Parameter keys to communicate between camera application and driver.

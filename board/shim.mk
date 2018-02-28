@@ -15,16 +15,5 @@
 
 # Shim
 TARGET_LD_SHIM_LIBS += \
-    /system/lib/libbauthserver.so|/system/lib/libbauthtzcommon_shim.so \
-    /system/lib/libexynoscamera.so|/system/vendor/lib/libcamhelpr.so \
-    /system/lib/libexynoscamera.so|/system/lib/libstagefright_shim.so \
-    /system/lib/libexynoscamera3.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|/system/lib/libstagefright_shim.so \
-    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|/system/lib/libstagefright_shim.so
+    /system/lib/libexynoscamera.so|/vendor/lib/libcamhelpr.so \
+    /system/lib/libstagefright.so|/vendor/lib/libstagefright_shim.so

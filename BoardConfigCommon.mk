@@ -19,9 +19,6 @@ LOCAL_PATH := device/samsung/exynos7870-common
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
-# Release tools
-TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
-
 # SELinux
 BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
 

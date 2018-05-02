@@ -27,3 +27,6 @@ lib/omx/libOMX.Exynos.MPEG4.Encoder.so
 lib/omx/libOMX.Exynos.VP8.Decoder.so
 lib/omx/libOMX.Exynos.VP8.Encoder.so
 lib/omx/libOMX.Exynos.WMV.Decoder.so
+
+# Widewine from Pixel 2
+vendor/lib/mediadrm/libwvdrmengine.so|2b5aa5d4d8665d4bd1180d5ccd8028cb

@@ -107,6 +107,19 @@ on post-fs-data
 
     restorecon_recursive /data
     restorecon_recursive /efs
+	
+	# NFC
+    mkdir /data/nfc 0700 nfc nfc
+    mkdir /data/nfc/param 0700 nfc nfc
+    mkdir /data/bcmnfc 0700 nfc nfc
+    mkdir /data/bcmnfc/param 0700 nfc nfc
+
+    # Samsung Pay
+    mkdir /efs/pfw_data 0760 spay spay
+
+    # MST/NFC Switch
+    chown spay system /dev/mst_ctrl
+    chmod 0660 /dev/mst_ctrl
 
 on boot
     # 1-key hard reset
@@ -394,6 +407,16 @@ on boot
 
 on fs
     mount_all /fstab.samsungexynos7870 --early
+	
+# Permissions for System LSI NFC
+# NFC : Permissions for NFC
+    chmod 0660 /dev/sec-nfc
+    chown nfc nfc /dev/sec-nfc
+# NFC : EFS section for NFC Resonant Frequency
+    mkdir /efs/sec_efs/nfc 0700 nfc nfc
+# Permissions for S.LSI ESE
+    chmod 0660 /dev/p3
+    chown system system /dev/p3	
 
 on late-fs
     # Start HW service manager early

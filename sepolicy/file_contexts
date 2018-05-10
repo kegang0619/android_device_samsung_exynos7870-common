@@ -74,3 +74,8 @@
 /system/bin/wifiloader       u:object_r:wifiloader_exec:s0
 /system/bin/cbd              u:object_r:cpboot-daemon_exec:s0
 /system/bin/gpsd             u:object_r:gpsd_exec:s0
+
+# NFC
+/dev/bcm2079x                u:object_r:nfc_device:s0
+/dev/sec-nfc                 u:object_r:nfc_device:s0
+/data/nfc(/.*)?              u:object_r:nfc_data_file:s0

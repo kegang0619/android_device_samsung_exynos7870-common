@@ -54,6 +54,11 @@ sys.use_fifo_ui=1
 # Wifi
 wifi.interface=wlan0
 
+# Wifi Display
+wlan.wfd.hdcp=disable
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
 # Nfc
 ro.nfc.port="I2C"
 ro.nfc.sec_hal=true

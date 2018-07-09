@@ -64,6 +64,8 @@ on init
     chown system system /proc/store_lastkmsg
     chmod 0600 /proc/store_lastkmsg
 
+    setprop sys.usb.configfs adb
+
 on post-fs-data
 
     # Permissions for gnss
@@ -141,9 +143,9 @@ on boot
     chmod 0664 /sys/class/devfreq/17000020.devfreq_int/available_frequencies
 
     # EFS permissions
-    chown system radio /efs/nv_data.bin
-    chown system radio /efs/nv_data.bin.md5
-    chown system radio /cpefs/.nv_core.bak
+    #chown system radio /efs/nv_data.bin
+    #chown system radio /efs/nv_data.bin.md5
+    #chown system radio /cpefs/.nv_core.bak
 
     chown system system /dev/iio:device0
     chmod 660  /dev/iio:device0

@@ -20,7 +20,7 @@
         "target_path": "hardware/samsung_slsi-cm/openmax"
     },
     {
-        "repository": "refinedkernel",
+        "repository": "android_kernel_samsung_refinedkernel",
         "target_path": "kernel/samsung/refinedkernel"
     },
     {

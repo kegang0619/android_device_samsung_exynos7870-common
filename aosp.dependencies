@@ -20,8 +20,8 @@
         "target_path": "hardware/samsung_slsi-cm/openmax"
     },
     {
-        "repository": "android_kernel_samsung_exynos7870",
-        "target_path": "kernel/samsung/exynos7870"
+        "repository": "refinedkernel",
+        "target_path": "kernel/samsung/refinedkernel"
     },
     {
         "repository": "proprietary_vendor_samsung",

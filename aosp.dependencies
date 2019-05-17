@@ -24,7 +24,7 @@
         "target_path": "kernel/samsung/refinedkernel_2"
     },
     {
-        "repository": "proprietary_vendor_samsung",
+        "repository": "android_vendor_samsung",
         "target_path": "vendor/samsung"
     }
 ]

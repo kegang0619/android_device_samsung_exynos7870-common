@@ -20,8 +20,8 @@
         "target_path": "hardware/samsung_slsi-cm/openmax"
     },
     {
-        "repository": "refinedkernel_2",
-        "target_path": "kernel/samsung/refinedkernel_2"
+        "repository": "Helios_7870",
+        "target_path": "kernel/samsung/Helios_7870"
     },
     {
         "repository": "android_vendor_samsung",

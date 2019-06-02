@@ -12,16 +12,12 @@
         "target_path": "hardware/samsung_slsi-cm/exynos5"
     },
     {
-        "repository": "android_hardware_samsung_slsi-cm_exynos7870",
-        "target_path": "hardware/samsung_slsi-cm/exynos7870"
-    },
-    {
         "repository": "android_hardware_samsung_slsi-cm_openmax",
         "target_path": "hardware/samsung_slsi-cm/openmax"
     },
     {
-        "repository": "Helios_7870",
-        "target_path": "kernel/samsung/Helios_7870"
+        "repository": "FlareKernel_AOSP_V2",
+        "target_path": "kernel/samsung/FlareKernel_AOSP_V2"
     },
     {
         "repository": "android_vendor_samsung",
